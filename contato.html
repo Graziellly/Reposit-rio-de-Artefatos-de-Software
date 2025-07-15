@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Babaçu Lanches - Contato</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+  body {
+    margin: 0; padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+  }
+
+  header, footer {
+    background-color: #ffd700;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.5);
+    user-select: none;
+  }
+
+  main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+  }
+
+  .contato-box {
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    max-width: 450px;
+    padding: 2rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+    animation: fadeIn 1s ease forwards;
+  }
+
+  .contato-box h2 {
+    margin-top: 0;
+    color: #ffd700;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .contato-info {
+    margin-bottom: 1.5rem;
+  }
+
+  .contato-info p {
+    margin: 8px 0;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .contato-info p strong {
+    color: #ffd700;
+  }
+
+  .contato-info img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .voltar-link {
+    color: #ffd700;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: transform 0.3s ease;
+  }
+
+  .voltar-link:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+  }
+
+  /* WhatsApp floating button */
+  .whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+  }
+  .whatsapp-btn:hover {
+    background-color: #1ebe57;
+  }
+
+  .whatsapp-btn svg {
+    width: 32px;
+    height: 32px;
+    fill: white;
+  }
+
+  /* Fade in animation */
+  @keyframes fadeIn {
+    0% {opacity: 0; transform: translateY(20px);}
+    100% {opacity: 1; transform: translateY(0);}
+  }
+
+  /* Responsividade */
+  @media(max-width: 480px) {
+    .contato-box {
+      width: 90%;
+      padding: 1.5rem;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>Babaçu Lanches – Contato</header>
+
+<main>
+  <section class="contato-box">
+    <h2>Fale Conosco</h2>
+
+    <div class="contato-info">
+      <p>📍 <strong>Endereço:</strong> Riacho de Santana</p>
+      <p>📞 <strong>Telefone:</strong> (84) 98119-7341</p>
+      <p>✉️ <strong>E-mail:</strong> contato@babaculanches.com.br</p>
+      <p>🚚 <strong>Entregas disponíveis</strong></p>
+      <p>Para pedidos ou dúvidas, envie uma mensagem via WhatsApp clicando no botão verde no canto inferior direito.</p>
+    </div>
+
+    <a href="index.html" class="voltar-link">← Voltar para a página inicial</a>
+  </section>
+</main>
+
+<footer>© 2025 Babaçu Lanches</footer>
+
+<!-- WhatsApp Button -->
+<a href="https://wa.me/5584981197341" target="_blank" aria-label="WhatsApp" class="whatsapp-btn" title="Fale conosco pelo WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M20.52 3.48A11.77 11.77 0 0012 0a11.96 11.96 0 00-9.27 19.64L0 24l4.52-2.66A11.95 11.95 0 0024 12a11.77 11.77 0 00-3.48-8.52zM12 21.48a9.26 9.26 0 01-4.73-1.39l-.34-.2-2.69 1.58 1.58-2.69-.2-.34A9.3 9.3 0 1121.48 12 9.32 9.32 0 0112 21.48z"/>
+    <path d="M17.57 14.56l-2.46-.7a1.12 1.12 0 00-1.03.3l-.44.44a7.17 7.17 0 01-3.42-3.42l.44-.44a1.11 1.11 0 00.3-1.04l-.7-2.46a1.1 1.1 0 00-1.05-.76h-1.18a.58.58 0 00-.57.57 5.9 5.9 0 005.9 5.89.58.58 0 00.57-.57v-1.18a1.1 1.1 0 00-.76-1.04z"/>
+  </svg>
+</a>
+
+</body>
+</html>

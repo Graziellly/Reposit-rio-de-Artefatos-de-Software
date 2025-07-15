@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Babaçu Lanches</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+    body {
+      margin:0;
+      padding:0;
+      font-family:'Poppins', sans-serif;
+      background:#121212;
+      color:#EEE;
+    }
+   header {
+  background: #121212;
+  padding: 1rem 1rem;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  flex-direction: column; /* Coloca o conteúdo em coluna para a logo e texto ficarem um embaixo do outro */
+  gap: 0.5rem; /* Espaço entre logo e texto */
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 90px; /* Aumentei o tamanho da logo */
+  width: auto;
+}
+
+.logo-text {
+  font-weight: 799;
+  font-size: 1.5rem;
+  color: #FFD700;
+}
+
+    main {
+      max-width:960px;
+      margin:1rem auto;
+      padding:0 1rem;
+    }
+    h2 {
+      color:#FFD700;
+      margin:1.5rem 0 1rem;
+    }
+    .sobre, .contato {
+      background:#1e1e1e;
+      padding:1.5rem;
+      border-radius:12px;
+      margin-bottom:2rem;
+    }
+    .cards {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:1rem;
+    }
+    .card {
+      background:#1e1e1e;
+      border-radius:12px;
+      overflow:hidden;
+      display:flex;
+      flex-direction:column;
+      transition:transform 0.3s,box-shadow 0.3s;
+    }
+    .card:hover {
+      transform:translateY(-5px);
+      box-shadow:0 10px 25px rgba(255,215,0,0.5);
+    }
+    .card img {
+      width:100%; height:160px; object-fit:cover;
+    }
+    .card-content {
+      padding:1rem;
+      flex:1;
+      display:flex;
+      flex-direction:column;
+    }
+    .card-content h3 {
+      color:#FFD700;
+      margin:0.2rem 0;
+    }
+    .card-content p {
+      font-size:0.95rem;
+      line-height:1.4;
+      flex:1;
+    }
+
+    .contato {
+  background: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-top: 3rem;
+  margin-bottom: 6rem; /* aumentei o espaçamento */
+
+}
+
+
+    .btn-whatsapp {
+      background:#25d366;
+      color:#FFF;
+      padding:10px;
+      text-align:center;
+      border:none;
+      border-radius:6px;
+      font-weight:600;
+      width:100%;
+      margin-top:1rem;
+      text-decoration:none;
+      display:inline-block;
+    }
+    footer {
+      background:#FFD700;
+      text-align:center;
+      padding:1.5rem 1rem;
+      font-weight:600;
+      margin-top:2rem;
+      color: #121212;
+    }
+    @media(max-width:480px) {
+      .card img {
+        height:140px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+  <div class="logo-container">
+    <img src="Design_sem_nome-removebg-preview.png" alt="Babaçu Lanches" class="logo" />
+    <span class="logo-text">Babaçu Lanches</span>
+  </div>
+</header>
+
+  <main>
+    <!-- Sobre -->
+    <section class="sobre">
+      <h2>Sobre</h2>
+      <p>
+        O Babaçu Lanches oferece os melhores sabores da região: hambúrgueres, Crepes Francês, Cuscuz Recheado, Porções de Churrasco, Opções em Acompanhamentos e Batata Fritas. Ingredientes frescos e atenção ao cliente é o nosso compromisso.
+      </p>
+    </section>
+
+    <!-- Cardápio -->
+    <h2>hambúrgueres</h2>
+    <div class="cards">
+      <!-- Hambúrguer -->
+      <div class="card">
+        <img src= "https://www.seriouseats.com/thmb/uSNXjlR9pQU0Nt9HJTzD2ZhZ45Y%3D/1500x0/filters%3Ano_upscale%28%29%3Amax_bytes%28150000%29%3Astrip_icc%28%29/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__images__2015__07__20150728-homemade-whopper-food-lab-35-b3500a5c2f3e4e10aa3169d5f76e1468.jpg" alt="Hambúrguer">
+        <div class="card-content">
+          <h3>Hambúrguer</h3>
+          <p>Varias opções.</p>
+        </div>
+      </div>
+
+      <!-- Crepe de Carne de Sol -->
+      <div class="card">
+        <img src="https://img.freepik.com/premium-photo/sun-dried-meat-crepe-with-ingredients-olive-cheese-tomato-background_266402-828.jpg" alt="Crepe de Carne de Sol">
+        <div class="card-content">
+          <h3>Crepe Francês</h3>
+          <p>Varias opções.</p>
+        </div>
+      </div>
+
+      <!-- Cuscuz Recheado -->
+      <div class="card">
+        <img src="https://www.sabornamesa.com.br/media/k2/items/cache/9f69834c2b52286f136e08fabd62f78b_XL.jpg" alt="Cuscuz Recheado">
+        <div class="card-content">
+          <h3>Cuscuz Recheado</h3>
+          <p>Varias opções.</p>
+        </div>
+      </div>
+
+      <!-- Batata Frita -->
+      <div class="card">
+        <img src="https://stordfkenticomedia.blob.core.windows.net/df-us/rms/media/recipesmedia/recipes/retail/x17/2015/dec/18932-loaded-baked-potato-cheese-fries-600x600.jpg?ext=.jpg" alt="Batata Frita">
+        <div class="card-content">
+          <h3>Batata Fritas</h3>
+          <p>Batata Frita  Normal e Batata Frita Especial.</p>
+        </div>
+      </div>
+
+      <!-- Churrasco no Espetão -->
+      <div class="card">
+        <img src="https://as2.ftcdn.net/jpg/03/71/69/11/1000_F_371691126_hEQl8uAVvAfnFdhZQWBvS4kUAws2H1ep.jpg" alt="Churrasco no Espetão">
+        <div class="card-content">
+          <h3> Porções de Churrasco</h3>
+          <p> Opções: Boi, Porco, Asa de Frango, Coxa de Frango,  Linguiça Mista, Coração de Frango, Coração de Boi e Língua de Boi.</p>
+          <p>Acompanhamentos: Farofa e Vinagrete.</p>
+        </div>
+      </div>
+
+      <!-- Arroz de Leite -->
+      <div class="card">
+        <img src= "https://www.receitasnestle.com.br/sites/default/files/styles/recipe_detail_desktop_new/public/srh_recipes/a3ea1be90cbae91368a1775275c293c8.jpeg?itok=8d3QuUU5" alt="Arroz de Leite">
+        <div class="card-content">
+          <h3>Acompanhamentos</h3>
+          <p>Arroz de Leite e Baião Cremoso.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contato -->
+    <section class="contato">
+      <h2>Contato</h2>
+      <p>📍 <strong>Endereço:</strong> Riacho de Santana</p>
+      <p>📞 <strong>Telefone:</strong> (84) 98119‑7341</p>
+      <p>🚚 <strong>Entregas disponíveis</strong></p>
+      <p>Faça seu pedido no nosso WhatsApp! </p>
+     <a href="https://wa.me/5584981197341" target="_blank" class="btn-whatsapp">Pedir pelo WhatsApp</a>
+    </section>
+  </main>
+
+  <footer>© 2025 Babaçu Lanches</footer>
+</body>
+</html>
